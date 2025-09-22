@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hobbies • Angela Bunnell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="navbar container" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <div class="brand-name">Angela Bunnell • bioSite</div>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="hobbies.html" aria-current="page">Hobbies</a>
+        <a class="nav-link" href="Contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section section--green">
+      <h1>Hobbies</h1>
+      <p class="lead">Three simple cards for reading, gardening, and cooking — with photos and captions.</p>
+    </section>
+
+    <section class="grid" aria-label="Hobby Gallery">
+      <figure class="figure">
+        <img class="responsive" src="assets/images/books.png" alt="Stack of books" />
+        <figcaption><strong>Reading.</strong> Historical fiction to relax and learn from the past.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img class="responsive" src="assets/images/garden.png" alt="Garden bed with flowers" />
+        <figcaption><strong>Gardening.</strong> Growing from seed to harvest — patience and peace.</figcaption>
+      </figure>
+      <figure class="figure">
+        <img class="responsive" src="assets/images/meal.png" alt="Home-cooked meal" />
+        <figcaption><strong>Cooking.</strong> Meals that bring family together.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Reed Bunnell. Built for CSD-340.</div>
+    <ul class="inline">
+      <li><a href="https://github.com/Mcdough12/bioSite" target="_blank" rel="noopener">GitHub Repo ↗</a></li>
+      <li><a href="https://bellevue.edu" target="_blank" rel="noopener">External Link ↗</a></li>
+    </ul>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
