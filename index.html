@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Angela Bunnell | bioSite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="navbar container" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <div class="brand-name">Angela Bunnell • bioSite</div>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="hobbies.html">Hobbies</a>
+        <a class="nav-link" href="Contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="section">
+      <h1>Welcome</h1>
+      <p class="lead">A personal bioSite for <strong>Angela Bunnell</strong> — designed with a Module&nbsp;4 style guide: purple headings, gold accents, and Georgia/Arial typography.</p>
+      <p>Explore Angela’s background, hobbies, and inspirations. This site follows the prepared wireframes and visual standards from the course PDF.</p>
+      <p>Visit <a href="https://bellevue.edu" target="_blank" rel="noopener">Bellevue University</a>. <span class="badge">External link</span></p>
+    </section>
+
+    <section class="grid">
+      <article class="card card--purple">
+        <h2>About</h2>
+        <p>Read Angela’s short bio and a 10-question interview covering family, work, and what motivates her.</p>
+        <p><a href="about.html">Go to About →</a></p>
+      </article>
+      <article class="card">
+        <h2>Hobbies</h2>
+        <p>Reading, gardening, and cooking — each with a brief caption and image.</p>
+        <p><a href="hobbies.html">See Hobbies →</a></p>
+      </article>
+      <article class="card card--green">
+        <h2>Contact</h2>
+        <p>Email and GitHub for questions about the project.</p>
+        <p><a href="Contact.html">Contact →</a></p>
+      </article>
+    </section>
+
+    <section class="section section--gold" aria-label="Images with captions">
+      <h2>Images & Captions</h2>
+      <div class="grid">
+        <figure class="figure">
+          <img class="responsive" src="assets/images/collage.png" alt="Collage representing hobbies" />
+          <figcaption>Figure 1. Collage representing reading, gardening, and cooking.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="responsive" src="assets/images/books.png" alt="Stack of books" />
+          <figcaption>Figure 2. Books highlight image.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Reed Bunnell. Built for CSD-340.</div>
+    <ul class="inline">
+      <li><a href="https://github.com/Mcdough12/bioSite" target="_blank" rel="noopener">GitHub Repo ↗</a></li>
+      <li><a href="https://bellevue.edu" target="_blank" rel="noopener">External Link ↗</a></li>
+    </ul>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
